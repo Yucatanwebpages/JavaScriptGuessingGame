@@ -2,13 +2,19 @@
 
 // GUESSING GAME
 
+// Defining variables
+
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highScore = 0;
 
+// Message function
+
 const displayMessage = function (message) {
   document.querySelector(".message").textContent = message;
 };
+
+// Check button
 
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
